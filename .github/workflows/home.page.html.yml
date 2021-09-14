@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Seja bem vindo, {{pessoa ? pessoa.nome + pessoa.sobrenome : 'Visitante'}}
+      <ion-progress-bar color="dark" value="0.8"></ion-progress-bar>
+      <ion-progress-bar color="dark" [value]="currentValue"></ion-progress-bar>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+
+    <br>
+    <p>{{texto}}</p>
+
+    <ion-text style="color: {{cor}}"><br>
+
+      <h2> |Texto colorido| </h2>
+    </ion-text> <br>
+  </ion-item>
+</ion-content>
+
+  <ion-text color="medium">Texto apagadinho</ion-text>
+<ion-badge color="primary">101</ion-badge>
+<ion-avatar>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZac2t556jYwqyDfbs3eLqPSfm5JTyo-b-ZA&usqp=CAU">
+</ion-avatar>
+<ion-icon name="add"></ion-icon>
+</ion-content>
+
+
+<ion-text style=" color: {{cor}}"><br>
+
+  <h2> | Texto colorido| </h2>
+</ion-text> <br>
+<ion-item>
+  <ion-label position="floating">Floating Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<!-- <ion-input type="text placeholder="Valor do depósito"></ion-input> -->
+
+<ion-button (click)="aumentar()">Aumentar</ion-button><br>
+
+<!-- <ion-input type="text" placeholder="valor do depósito"></ion-input>-->
+
+<ion-button (click)="diminuir()">Diminuir</ion-button><br>
+
+<ion-button (click)="diminuir()">Diminuir</ion-button><br>
+
+<ion-button (click)="resetar()">Resetar</ion-button>
+
+<p>Contador vai aparecer: {{valorNumerico}}</p>
+
+<ion-input type="text" [(ngModel)]="currentValue"></ion-input>
+
+<h2>
+  <p>Escreva aqui e veja por aqui! {{currentValue}}</p>
+</h2>
+
+<ion-toggle [(ngModel)]="switch"></ion-toggle>
+<p>Valor da chave: {{switch ? 'Ligado': 'Desligado'}}</p>
+</div>
+
+</ion-content>
