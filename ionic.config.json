@@ -1,0 +1,8 @@
+{
+  "name": "meu-terceiro-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "e3f9e7d1"
+}
